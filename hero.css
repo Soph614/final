@@ -1,0 +1,152 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #ffffff;
+}
+
+/* HEADER STYLES
+   ========================= */
+
+header {
+  background-color: #ffffff;
+  border-bottom: 1px solid #dddddd;
+  padding: 0.75rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+header h1 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #1d3557;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: #1d3557;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #457b9d;
+}
+
+
+/* HERO SECTION
+   ========================= */
+
+.hero {
+    /* background-image is layering TWO backgrounds:
+     1. A dark transparent gradient
+     2. The actual photo
+     The dark gradient helps make the white text easier to read. */
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)),
+    url("images/gradient-hero.png");
+  min-height: 47vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 1.4;
+}
+
+.hero-content {
+  text-align: center;
+  color: white;
+  max-width: 600px;
+}
+
+.hero-content h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.hero-content p {
+  font-size: 115%;
+
+}
+
+.hero-button {
+  display: inline-block;
+  background-color: rgb(234, 119, 119);
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.9rem 1.5rem;
+  border-radius: 0.75rem;
+}
+
+.hero-button:hover {
+  background-color:rgb(26, 201, 186);
+}
+
+
+/* MAIN CONTENT SECTION
+   ========================= */
+.content-section {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem 0;
+  font-size: 1.25rem;
+  line-height: 1.4;
+}
+
+.content-section h2 {
+  font-size: 2rem;
+  color: #1d3557;
+  margin-bottom: 0.75rem;
+}
+
+.content-section p {
+  margin-bottom: 1rem;
+}
+
+
+/* FOOTER
+   ========================= */
+
+footer {
+  font-size: 80%;
+  background-color: #1d3557;
+  color: #ffffff;
+  text-align: center;
+  padding: 1rem;
+}
+
+footer p {
+  margin: 0;
+}
+
+
+/* RESPONSIVE STYLES
+   ========================= */
+
+@media (max-width: 480px) {
+  header {
+    flex-direction: column;
+  }
+
+  .hero {
+    padding: 1.5rem;
+  }
+
+  .hero-content h2 {
+    font-size: 2rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
+}

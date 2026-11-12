@@ -1,0 +1,363 @@
+:root {
+  --second-darkest: #4CAF50;
+  --third-lightest: #A5D6A7;
+  --second-lightest: #C8E6C9;
+  --lightest: #F1F8E9;
+  --darkest: #3E2723;
+}
+
+body {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: 100;
+}
+
+header {
+  background-color: var(--second-darkest);
+  display: flex;
+  padding: 2rem;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--darkest)
+}
+
+header h1 {
+  font-size: 400%;
+  font-family: "Monsieur La Doulaise", cursive;
+  font-weight: 200;
+  font-style: normal;
+  padding-left: 2rem;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+nav a {
+  padding: 1rem 2rem;
+  display: block;
+  text-decoration: none;
+  list-style-type: none;
+  color: var(--lightest);
+  font-size: 130%;
+}
+
+/* Code copied from hero.css, but altered: */
+.hero {
+    /* background-image is layering TWO backgrounds:
+     1. A dark transparent gradient
+     2. The actual photo
+     The dark gradient helps make the white text easier to read. */
+  background-image:
+    url("images/light-gradient-hero.png");
+  min-height: 40vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 1.4;
+}
+
+.hero-content {
+  text-align: center;
+  color: white;
+  max-width: 600px;
+}
+
+.hero-content h2 {
+  margin-bottom: 1rem;
+}
+
+.hero-content p {
+  color: var(--darkest);
+  font-family: "Corinthia", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 3.5rem;
+  margin-bottom: 1.2rem;
+}
+
+.hero-button {
+  display: inline-block;
+  background-color: var(--lightest);
+  color: var(--darkest);
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.9rem 1.5rem;
+  border-radius: 0.75rem;
+  font-size: 150%;
+  margin-bottom: 1rem;
+}
+
+.hero-button:hover {
+  background-color:var(--darkest);
+  color: var(--lightest);
+}
+
+
+/* MAIN CONTENT SECTION
+   ========================= */
+.content-section {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem 0;
+  font-size: 1.25rem;
+  line-height: 1.4;
+}
+
+.content-section h2 {
+  font-size: 2rem;
+  color: #1d3557;
+  margin-bottom: 0.75rem;
+}
+
+.content-section p {
+  margin-bottom: 1rem;
+}
+
+
+/* FOOTER
+   ========================= */
+
+footer {
+  font-size: 80%;
+  background-color: var(--second-darkest);
+  color: var(--lightest);
+  text-align: center;
+  padding: 1rem;
+}
+
+footer p {
+  margin: 0;
+  font-size: 2rem;
+}
+
+
+/* RESPONSIVE STYLES
+   ========================= */
+
+@media (max-width: 480px) {
+  header {
+    flex-direction: column;
+  }
+
+  .hero {
+    padding: 1.5rem;
+  }
+
+  .hero-content h2 {
+    font-size: 2rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
+}
+/* ------------------------------ */
+.season-specials {
+  background-color: var(--darkest);
+}
+
+.season-specials h3 {
+  color: var(--lightest);
+  text-align: center;
+  padding: 2rem;
+  padding-bottom: 0rem;
+  font-size: 2rem;
+}
+
+.specials-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 2rem;
+  padding: 2rem;
+}
+
+.special {
+  background-color: var(--lightest);
+  padding: 1.4rem;
+  padding-bottom: .4rem;
+  color: var(--darkest);
+  border-radius: 4px;
+  display: grid;
+  grid-template-rows: 1fr 1.3fr;
+  line-height: 1.3;
+}
+
+.special-name {
+  align-self: center;
+  text-align: center;
+  padding-bottom: .4rem;
+  font-size: 130%;
+}
+
+.special-description {
+  font-size: 115%;
+  text-align: center;
+}
+
+.reviews {
+  background-color: var(--second-lightest);
+}
+
+.reviews h3 {
+  color: var(--darkest);
+  text-align: center;
+  padding: 2rem;
+  padding-bottom: 0rem;
+  font-size: 2rem;
+}
+
+.reviews-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: .5rem;
+  padding: 2rem;
+}
+
+.review-box {
+  background-color: var(--lightest);
+  padding: 1.4rem;
+  padding-bottom: .4rem;
+  color: var(--darkest);
+  border-radius: 2px;
+  display: grid;
+  grid-template-rows: 3.5fr 1fr;
+  line-height: 1.3;
+  border-left: 7px solid var(--second-darkest);
+}
+
+.review {
+  font-size: 120%;
+  text-align: left;
+}
+
+.reviewer-name {
+  text-align: right;
+  padding-top: 0px;
+}
+
+/* MENU Styles */
+.menu {
+  padding: 3rem;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  background-color: var(--lightest);
+  line-height: 1.3;
+}
+
+.menu h3 {
+  color: var(--second-darkest);
+  font-size: 140%;
+  padding-bottom: .5rem;
+}
+
+.menu-item-name {
+  font-size: 115%;
+  padding-bottom: .2rem;
+}
+
+
+/* ABOUT Styles */
+.about-wrapper {
+  background-color: var(--second-lightest);
+  padding: 2rem;
+}
+
+.about {
+  padding: 2rem;
+  font-size: 140%;
+  line-height: 1.4;
+  border-radius: 2rem;
+  text-align: center;
+  background-color: var(--lightest)
+}
+
+/* CONTACT Styles */
+.contact-page {
+  background-color: var(--lightest);
+  padding: 5rem;
+  line-height: 1.4;
+}
+
+.contact-page h2 {
+  font-size: 180%;
+  color: var(--darkest);
+}
+
+.contact-page p {
+  color: var(--darkest);
+  font-size: 140%;
+}
+
+.contact-page address p {
+  color: var(--darkest);
+  font-size: 140%;
+}
+
+@media (max-width: 1400px) {
+  .review-box {
+    grid-template-rows: 4fr 1fr;
+  }
+}
+
+@media (max-width: 950px) {
+  .specials-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .special {
+    margin: .5rem 10rem;
+  }
+
+  .reviews-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .review-box {
+    margin: .5rem 10rem;
+    grid-template-rows: 6.5fr 1fr;
+  }
+}
+
+@media (max-width: 850px) {
+  .special {
+    margin: .5rem 9rem;
+  }
+
+  .review-box {
+    margin: .5rem 4rem;
+  }
+}
+
+
+
+@media (max-width: 650px) {
+  .special {
+    margin: .5rem 5rem;
+  }
+
+  .review-box {
+    margin: .5rem 1rem;
+    grid-template-rows: 4fr 1fr;
+  }
+}
+
+@media (max-width: 550px) {
+  .special {
+    margin: .5rem 4rem;
+  }
+
+  .review-box {
+    margin: .5rem .3rem;
+    grid-template-rows: 3.5fr 1fr;
+  }
+}
