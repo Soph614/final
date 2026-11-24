@@ -248,6 +248,7 @@ footer p {
   padding: 3rem;
   display: grid;
   grid-template-columns: 2fr 1fr;
+  grid-gap: 2.5rem;
   background-color: var(--lightest);
   line-height: 1.3;
 }
@@ -256,6 +257,7 @@ footer p {
   color: var(--second-darkest);
   font-size: 140%;
   padding-bottom: .5rem;
+  padding-top: 0rem;
 }
 
 .menu-item-name {
@@ -265,18 +267,55 @@ footer p {
 
 
 /* ABOUT Styles */
-.about-wrapper {
+.about-wrapper h1 {
+  font-size: 180%;
+}
+
+.statement-wrapper {
   background-color: var(--second-lightest);
   padding: 2rem;
 }
 
-.about {
+.statement {
   padding: 2rem;
   font-size: 140%;
   line-height: 1.4;
   border-radius: 2rem;
   text-align: center;
   background-color: var(--lightest)
+}
+
+.farmers-section-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--lightest);
+  padding: 2rem;
+}
+
+.farmers-section {
+  background-color: var(--third-lightest);
+  padding: 3rem;
+  line-height: 1.4;
+  max-width: 600px;
+  border-radius: 10px;
+}
+
+.farmers-section h1 {
+  padding-bottom: .5rem;
+}
+
+.farmers-section p {
+  font-size: 120%;
+}
+
+.farmer {
+  border-left: 4px solid var(--darkest);
+  padding: 1rem;
+}
+
+.farmer h2 {
+  font-size: 140%;
 }
 
 /* CONTACT Styles */
@@ -324,7 +363,7 @@ footer p {
 
   .review-box {
     margin: .5rem 10rem;
-    grid-template-rows: 6.5fr 1fr;
+    grid-template-rows: 3fr 1fr;
   }
 }
 
@@ -334,7 +373,8 @@ footer p {
   }
 
   .review-box {
-    margin: .5rem 4rem;
+    margin: .5rem 7rem;
+    grid-template-rows: 3fr 1fr;
   }
 }
 
@@ -347,7 +387,7 @@ footer p {
 
   .review-box {
     margin: .5rem 1rem;
-    grid-template-rows: 4fr 1fr;
+    grid-template-rows: 3fr 1fr;
   }
 }
 
